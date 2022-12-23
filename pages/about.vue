@@ -1,12 +1,16 @@
 <template>
   <div>
     <h2>About</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, tempora accusamus sint doloribus modi recusandae ducimus nemo dolore cum, fuga pariatur debitis! Aut recusandae dolor magnam! Excepturi est quod repellat.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, tempora
+      accusamus sint doloribus modi recusandae ducimus nemo dolore cum, fuga
+      pariatur debitis! Aut recusandae dolor magnam! Excepturi est quod
+      repellat.
+    </p>
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 h2 {
