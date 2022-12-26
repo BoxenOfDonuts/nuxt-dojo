@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-const { product } = defineProps({
+defineProps({
   product: {
     type: Object,
     default: () => {},
