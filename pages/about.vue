@@ -1,22 +1,15 @@
 <template>
   <div>
-    <h2>About</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, tempora
-      accusamus sint doloribus modi recusandae ducimus nemo dolore cum, fuga
-      pariatur debitis! Aut recusandae dolor magnam! Excepturi est quod
-      repellat.
-    </p>
+    <h2 class="mb-5 text-3xl">About</h2>
+    <p>{{ data.data }}</p>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/currency/USD");
+</script>
 
 <style scoped>
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
 P {
   margin: 20px 0;
 }
