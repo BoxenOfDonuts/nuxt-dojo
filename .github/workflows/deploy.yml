@@ -25,5 +25,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "nuxt-3-test"
-          entrypoint: ".output/server/index.ts" # TODO: update entrypoint
-          root: ".output/public"
+          entrypoint: "server/index.ts" # TODO: update entrypoint
+          root: ".output"
