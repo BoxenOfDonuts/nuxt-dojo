@@ -13,7 +13,20 @@ definePageMeta({
   layout: "products",
 });
 
-const { data: products } = await useFetch("https://fakestoreapi.com/products");
+const { data: products, error } = await useFetch(
+  "https://fakestoreapi.com/products",
+  {
+    query: { limit: 15 },
+  }
+);
+
+if (error.value) {
+  throw createError({
+    statusCode: 418,
+    statusMessage: "Something Went Wrong",
+    fatal: true,
+  });
+}
 
 useHead({
   title: "Nuxt Dojo | Merch",
