@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="product.image" alt="product thumb" class="thumbnail" />
+    <img src="/images/icons8-fairytale-96.png" alt="product thumb" class="thumbnail" />
     <p class="font-bold text-gray-500 m-4 truncate"></p>
     <NuxtLink :to="`/products/${props.product.id}`">
       <p class="btn my-4">View Details</p>
